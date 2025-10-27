@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flask Bootstrap Demo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FlaskApp</a>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="text-center">
+      <h1 class="display-4">Welcome to Flask + Bootstrap</h1>
+      <p class="lead">This is a simple Flask app served in Docker.</p>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>
